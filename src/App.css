@@ -1,38 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@400&display=swap');
+
+:root {
+  
+	--mainOpacity: rgba(0, 0, 0, 0.333);
+	--blackOpacity: rgba(0, 0, 0, 0.849);
+  --whiteOpacity: rgba(255, 255, 255, 0.659);
+	--whiteLabel: rgb(255, 255, 255);
+	--silverLabel: rgb(239, 239, 239);
+	--matteBlack: rgb(39, 39, 39);
+	--purpleLabel: rgb(130, 101, 145);
+	--blackLabel: rgb(10, 10, 10);
+	--greyLabel: rgb(27, 27, 27);
+  --yellowLabel: rgb(246, 186, 56);
+
+}
+
 .App {
+
   text-align: center;
-}
+  overflow-x: hidden;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
-  background-color: #282c34;
+
+  background-color: var(--whiteLabel);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: calc(50px + 2vmin);
+  font-family: 'Assistant', sans-serif;
+  color: var(--purpleLabel);
+
 }
 
-.App-link {
-  color: #61dafb;
+/* Navigation Menu */
+
+nav {
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--silverLabel);
+  box-shadow: 1px 1px 1px 1px var(--mainOpacity);
+  color: var(--blackLabel);
+  padding: 1%;
+  padding-left: 1%;
+  padding-bottom: 1%;
+  position: fixed;
+  font-size: 1em;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-top: -4px;
+  z-index: 1;
+  order: 2;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.logo {
+  padding: 0;
+  margin: 0;
+}
+
+
+.menu {
+
+   display: flex;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   justify-content: center;
+   opacity: 0s; 
+
+}
+
+.menu li {
+  
+  margin: 0 20px;
+  margin-left: 20px;
+
+}
+
+.menu a {
+
+  color: var(--purpleLabel);
+  text-decoration: none;
+  padding: 5px;
+  transition: all 0.5s;
+
+}
+
+.menu a:hover {
+
+  color: var(--yellowLabel);
+  text-decoration: none;
+  padding: 10px;
+
+}
+
+.menu.open {
+
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	background-color: var(--matteBlack);
+	box-shadow: 5px 5px 5px var(--mainOpacity);
+	padding: 30%;
+	position: absolute;
+	top: 100%;
+	left: 0;
+
+}
+
+.menu.open li {
+
+	opacity: 1;
+	margin: 5%;
+	border-radius: 10px;
+	transform: translateY(0);
+	transition: opacity 0.3s, transform 0s linear 0s;
+
+}
+
+.menu.open li:nth-child(1) {
+
+	transition-delay: 0.35s;
+
+}
+
+.menu.open li:nth-child(2) {
+
+	transition-delay: 0.45s;
+
+}
+
+.menu.open li:nth-child(3) {
+
+	transition-delay: 0.55s;
+
+}
+
+.menu.open li:nth-child(4) {
+
+	transition-delay: 0.65s;
+
+}
+
+/* Overlay styles 
+NOTE: This is used when the hamburger menu opens and the rest of the viewport is overlayed with a blur effect in the background. 
+*/
+.overlay {
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: var(--mainOpacity);
+	z-index: 1;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.3s ease;
+	backdrop-filter: blur(10px);
+
+}
+
+.overlay.open {
+
+	opacity: 1;
+	visibility: visible;
+
+}
+
+
+
+/* Hamburger Menu - Main */
+
+.hamburger {
+
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: transform 0.3s;
+	margin-left: 10px;
+	/* Adjust the left margin as needed */
+	padding: 15px;
+
+}
+
+.hamburger span {
+
+	background-color: var(--blackLabel);
+	box-shadow: 1px 1px 1px var(--mainOpacity);
+	display: block;
+	height: 3px;
+	margin: 3px 0;
+	width: 28px;
+	transition: transform 0.8s, opacity 1s;
+
+}
+
+
+.hamburger.active span:nth-child(1) {
+
+	transform: rotate(45deg) translate(7px, 5px);
+
+}
+
+.hamburger.active span:nth-child(2) {
+
+	opacity: 0;
+
+}
+
+.hamburger.active span:nth-child(3) {
+
+	transform: rotate(-45deg) translate(7px, -5px);
+
+}
+
+
+@media (max-width: 768px) {
+
+  nav {
+
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    z-index: 1;
+    padding: 0.25%;
+    padding-left: 2%;
+
   }
-  to {
-    transform: rotate(360deg);
-  }
+
 }

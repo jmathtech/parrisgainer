@@ -1,22 +1,28 @@
-import logo from './logo.svg';
+import React, { useState } from "react";
 import './App.css';
 
-function App() {
+/* Assets  */
+import Menu from '../src/Menu/Menu.jsx';
+import Navigation from '../src/Navigation/Navigation.jsx';
+
+
+
+const App = () => {
+  const [isNavOpen, setIsNavOpen] = useState(false); // State to manage the open/close state of the navigation menu
+
+  const toggleNav = () => {
+    setIsNavOpen(!isNavOpen);
+  };
+
+
   return (
     <div className="App">
+      <Navigation isNavOpen={isNavOpen} toggleNav={toggleNav} />
+      <Menu />
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+
+          Welcome to Parris Gainer
+      
       </header>
     </div>
   );
