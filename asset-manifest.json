@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/ParrisGainer/static/css/main.e3c2e4db.css",
-    "main.js": "/ParrisGainer/static/js/main.3ddeb07a.js",
-    "static/media/parris_gainer.jpg": "/ParrisGainer/static/media/parris_gainer.489fad0a682667d4e052.jpg",
-    "static/media/parrisgainer_az.jpg": "/ParrisGainer/static/media/parrisgainer_az.65154844dee02f557a17.jpg",
-    "static/media/logo.png": "/ParrisGainer/static/media/logo.74f7be9fdaefdea46adf.png",
-    "index.html": "/ParrisGainer/index.html",
-    "main.e3c2e4db.css.map": "/ParrisGainer/static/css/main.e3c2e4db.css.map",
-    "main.3ddeb07a.js.map": "/ParrisGainer/static/js/main.3ddeb07a.js.map"
+    "main.css": "/parrisgainer/static/css/main.bd23c18f.css",
+    "main.js": "/parrisgainer/static/js/main.2f922cd4.js",
+    "static/media/parris_gainer.jpg": "/parrisgainer/static/media/parris_gainer.489fad0a682667d4e052.jpg",
+    "static/media/parrisgainer_az.jpg": "/parrisgainer/static/media/parrisgainer_az.65154844dee02f557a17.jpg",
+    "static/media/logo.png": "/parrisgainer/static/media/logo.74f7be9fdaefdea46adf.png",
+    "index.html": "/parrisgainer/index.html",
+    "main.bd23c18f.css.map": "/parrisgainer/static/css/main.bd23c18f.css.map",
+    "main.2f922cd4.js.map": "/parrisgainer/static/js/main.2f922cd4.js.map"
   },
   "entrypoints": [
-    "static/css/main.e3c2e4db.css",
-    "static/js/main.3ddeb07a.js"
+    "static/css/main.bd23c18f.css",
+    "static/js/main.2f922cd4.js"
   ]
 }
