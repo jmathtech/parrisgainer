@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/parrisgainer/static/css/main.4a3fa301.css",
-    "main.js": "/parrisgainer/static/js/main.d5a8d223.js",
+    "main.css": "/parrisgainer/static/css/main.b531cb92.css",
+    "main.js": "/parrisgainer/static/js/main.c36e8fc5.js",
     "static/media/front-page_pic.jpeg": "/parrisgainer/static/media/front-page_pic.ec53d76690a7482327a9.jpeg",
     "static/media/parrisgainer_az.jpg": "/parrisgainer/static/media/parrisgainer_az.65154844dee02f557a17.jpg",
     "static/media/logo.png": "/parrisgainer/static/media/logo.74f7be9fdaefdea46adf.png",
     "index.html": "/parrisgainer/index.html",
-    "main.4a3fa301.css.map": "/parrisgainer/static/css/main.4a3fa301.css.map",
-    "main.d5a8d223.js.map": "/parrisgainer/static/js/main.d5a8d223.js.map"
+    "main.b531cb92.css.map": "/parrisgainer/static/css/main.b531cb92.css.map",
+    "main.c36e8fc5.js.map": "/parrisgainer/static/js/main.c36e8fc5.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a3fa301.css",
-    "static/js/main.d5a8d223.js"
+    "static/css/main.b531cb92.css",
+    "static/js/main.c36e8fc5.js"
   ]
 }
